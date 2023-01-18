@@ -193,3 +193,25 @@ export const themeSettings = (mode) => {
     },
   };
 };
+
+// React context for color mode
+
+export const ColorModeContext = createContext({
+  toggleColorMode: () => {}
+});
+// this function will allow us to toggle the color mode through the app
+
+export const useMode = () => {
+  const [mode, setMode] = useState("dark");
+
+  const colorMode = useMemo(
+    () => ({
+      toggleColorMode: () => setMode((prev) => (prev === "light" ? "dark" : "light")),
+    }),
+    []
+  );
+
+  const theme = useMemo(() => createTheme(themeSettings(mode)),[mode]);
+
+  return [theme, colorMode];
+};
