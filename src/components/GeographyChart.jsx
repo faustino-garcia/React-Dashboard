@@ -50,7 +50,7 @@ const GeographyChart = ({ isDashboard = false }) => {
       projectionRotation={[0, 0, 0]}
       borderWidth={1.5}
       borderColor="#ffffff"
-      enableGraticule={true}
+      // enableGraticule={true}
       legends={
         !isDashboard
           ? [
