@@ -96,7 +96,7 @@ const Sidebar = () => {
                   alt="profile-user"
                   width="100px"
                   height="100px"
-                  src={`../../assets/user.jpeg`}
+                  src={`https://source.unsplash.com/random`}
                   style={{ cursor: "pointer", borderRadius: "50%" }}
                 />
               </Box>
