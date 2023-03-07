@@ -4,7 +4,7 @@
   "private": true,
   "description": "React dashboard",
   "main": "src/index.js",
-  "homepage": "https://faustino-garcia.github.io/React-Dashboard/",
+  "homepage": "https://faustino-garcia.github.io",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
